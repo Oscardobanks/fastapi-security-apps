@@ -9,6 +9,7 @@ import os
 app = FastAPI(title="Secure Student Portal API",
               description="A simple student portal where students can register, login and view grades.")
 
+# Initialize HTTP Basic authentication
 security = HTTPBasic()
 
 

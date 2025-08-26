@@ -5,7 +5,7 @@ import json
 import hashlib
 import os
 
-
+# Initialize HTTP Basic authentication
 security = HTTPBasic()
 
 
