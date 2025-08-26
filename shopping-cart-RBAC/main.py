@@ -134,7 +134,7 @@ def get_product(product_id: int):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Internal server error")
 
 
-@app.post("/cart/add")
+@app.post("/cart/add/")
 def add_to_cart(cart_item: CartItem, current_user: User = Depends(get_current_user)):
     try:
         products = load_products()
@@ -172,6 +172,12 @@ def add_to_cart(cart_item: CartItem, current_user: User = Depends(get_current_us
                 'product_id': cart_item.product_id,
                 'quantity': cart_item.quantity
             })
+
+        if save_carts(carts):
+            return {"message": f"Added {cart_item.quantity} of product {cart_item.product_id} to cart"}
+        else:
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to save cart")
 
     except HTTPException:
         raise HTTPException(
