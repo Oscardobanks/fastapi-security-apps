@@ -14,12 +14,12 @@ This repository contains hands-on FastAPI projects designed to teach:
 
 ## 📚 Projects Overview
 
-| Project                                 | Authentication Method            | Key Concepts                                    | Difficulty        |
-| --------------------------------------- | -------------------------------- | ----------------------------------------------- | ----------------- |
-| [Student Portal](#-student-portal-auth) | HTTP Basic Auth                  | Basic authentication, password hashing          | ⭐ Beginner       |
-| [Shopping Cart](#-shopping-cart-RBAC)   | HTTP Basic Auth + Roles          | Role-based access control, dependency injection | ⭐⭐ Intermediate |
-| [Job Tracker](#-job-tracker)            | HTTP Basic Auth + User Isolation | User data separation, filtered responses        | ⭐⭐ Intermediate |
-| [Notes API](#-notes-api-jwt)            | JWT Bearer Tokens                | Token-based auth, stateless sessions            | ⭐⭐⭐ Advanced   |
+| Project                                 | Authentication Method            | Key Concepts                                    |
+| --------------------------------------- | -------------------------------- | ----------------------------------------------- |
+| [Student Portal](#-student-portal-auth) | HTTP Basic Auth                  | Basic authentication, password hashing          |
+| [Shopping Cart](#-shopping-cart-RBAC)   | HTTP Basic Auth + Roles          | Role-based access control, dependency injection |
+| [Job Tracker](#-job-tracker)            | HTTP Basic Auth + User Isolation | User data separation, filtered responses        |
+| [Notes API](#-notes-api-jwt)            | JWT Bearer Tokens                | Token-based auth, stateless sessions            |
 
 ## 🚀 Quick Start
 
